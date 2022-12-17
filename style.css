@@ -1,0 +1,98 @@
+*{
+  font-family: 'Fraunces', serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(30, 38%, 92%);
+  margin: 10;
+  padding: 0;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  width: 650px;
+  border-radius: 15px;
+}
+
+.imagem {
+  width: 50%;
+  border-radius: 10px 0 0 10px;
+}
+
+.titulo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  letter-spacing: 10px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nome-perfume {
+  font-size: 40px;
+}
+
+.paragrafo {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.preco {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.preco-promo {
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+}
+
+.preco-sem {
+  text-decoration: line-through;
+  font-weight: normal;
+}
+
+.botao {
+  padding: 10px 60px;
+  background-color: hsl(158, 36%, 37%);
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.botao:hover {
+  transition: all 0.5s ease-out;
+  background-color: hsl(158, 36%, 27%);
+}
+
+@media (max-width: 800px) {
+ .card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+ }
+
+ body {
+  box-sizing: border-box;
+ }
+
+ .imagem {
+  width: 100%;
+  height: 500px;
+  border-radius: 10px 10px 0 0;
+ }
+}
